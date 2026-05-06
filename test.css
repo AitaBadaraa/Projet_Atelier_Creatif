@@ -1,0 +1,33 @@
+/* ===== COMMUN ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #F5F2ED;
+  --ink: #1C1917;
+  --accent: #C2410C;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.team-card { padding: 20px; border: 1px solid gray; }
+.contact { text-align: center; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-links { display: none; }
+}
