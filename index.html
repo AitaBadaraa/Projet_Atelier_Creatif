@@ -1,23 +1,230 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TaskFlow</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans&display=swap" rel="stylesheet">
+  <title>TaskFlow — Gestion de tâches</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="test.css" />
 </head>
-
 <body>
-<section id="team">
-  <h2>Equipe</h2>
-  <div class="team-card">Membre A</div>
-</section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <a href="#">Email</a>
-</section>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">TaskFlow</a>
+      <ul class="nav-links">
+        <li><a href="#about">Le projet</a></li>
+        <li><a href="#features">Fonctionnalites</a></li>
+        <li><a href="#team">Equipe</a></li>
+        <li><a href="#contact" class="btn-nav">Nous contacter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="badge">Projet L2 Genie Logiciel — ISI 2026</span>
+      <h1 class="hero-title">Organisez votre<br /><em>quotidien</em> avec clarté.</h1>
+      <p class="hero-sub">TaskFlow est une application web de gestion de tâches collaborative, pensée pour simplifier la planification individuelle et en équipe.</p>
+      <div class="hero-actions">
+        <a href="#features" class="btn-primary">Decouvrir le projet</a>
+        <a href="#team" class="btn-secondary">Voir l'equipe</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="card-stack">
+        <div class="task-card card-1">
+          <span class="task-dot done"></span>
+          <div>
+            <p class="task-title">Maquette UI complète</p>
+            <p class="task-meta">Terminé · Design</p>
+          </div>
+        </div>
+        <div class="task-card card-2">
+          <span class="task-dot active"></span>
+          <div>
+            <p class="task-title">Développement back-end</p>
+            <p class="task-meta">En cours · Technique</p>
+          </div>
+        </div>
+        <div class="task-card card-3">
+          <span class="task-dot pending"></span>
+          <div>
+            <p class="task-title">Tests d'intégration</p>
+            <p class="task-meta">A venir · QA</p>
+          </div>
+        </div>
+        <div class="progress-card">
+          <p class="prog-label">Avancement global</p>
+          <div class="prog-bar-outer"><div class="prog-bar-inner"></div></div>
+          <p class="prog-pct">68%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label">Le projet</div>
+      <h2 class="section-title">Pourquoi TaskFlow ?</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Dans un contexte professionnel ou académique, la gestion de tâches reste un défi quotidien. Les équipes peinent à suivre leurs priorités, à répartir le travail et à garder une vision globale de l'avancement d'un projet.</p>
+          <p>TaskFlow est né de ce constat. C'est une application web simple, claire et efficace qui permet à n'importe quelle équipe de planifier, d'assigner et de suivre ses tâches en temps réel.</p>
+          <p>Ce projet a été réalisé dans le cadre de l'atelier créatif du module L2 Génie Logiciel au Groupe ISI de Dakar.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">14</span>
+            <span class="stat-desc">Fonctionnalités planifiées</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-desc">Développeuses</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">1</span>
+            <span class="stat-desc">Sprint de livraison</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-desc">Open source sur GitHub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label">Fonctionnalites</div>
+      <h2 class="section-title">Ce que TaskFlow propose</h2>
+      <div class="features-grid">
+        <div class="feature-card fc-large">
+          <div class="feat-icon">01</div>
+          <h3>Tableau de bord personnalisé</h3>
+          <p>Visualisez en un coup d'oeil toutes vos tâches en cours, terminées et à venir, regroupées par priorité et par catégorie.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">02</div>
+          <h3>Gestion des priorités</h3>
+          <p>Classez chaque tâche selon son niveau d'urgence : haute, normale ou basse priorité.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">03</div>
+          <h3>Deadlines et rappels</h3>
+          <p>Associez une date limite à chaque tâche et recevez des alertes avant l'échéance.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">04</div>
+          <h3>Espace collaboratif</h3>
+          <p>Invitez vos coéquipiers, assignez des tâches et suivez les contributions de chacun.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">05</div>
+          <h3>Authentification sécurisée</h3>
+          <p>Inscription, connexion et gestion de profil avec un système d'authentification robuste.</p>
+        </div>
+        <div class="feature-card fc-accent">
+          <div class="feat-icon">06</div>
+          <h3>Suivi de l'avancement</h3>
+          <p>Des indicateurs visuels clairs pour mesurer la progression de chaque projet ou groupe de tâches.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="stack">
+    <div class="container">
+      <div class="section-label">Technologies</div>
+      <h2 class="section-title">Notre stack technique</h2>
+      <div class="stack-grid">
+        <div class="stack-item">
+          <span class="stack-layer">Front-end</span>
+          <span class="stack-tech">HTML · CSS · JavaScript</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-layer">Back-end</span>
+          <span class="stack-tech">Node.js · Express</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-layer">Base de données</span>
+          <span class="stack-tech">MongoDB</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-layer">Versioning</span>
+          <span class="stack-tech">Git · GitHub</span>
+        </div>
+        <div class="stack-item">
+          <span class="stack-layer">Planification</span>
+          <span class="stack-tech">Trello · Agile</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team" id="team">
+    <div class="container">
+      <div class="section-label">Equipe</div>
+      <h2 class="section-title">Qui sommes-nous ?</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="avatar av1">FS</div>
+          <h3>Fatou Samb</h3>
+          <span class="role">Chef de projet · Développeuse front-end</span>
+          <p>Intervient sur le front-end et le back-end, assure la liaison entre les composants</p>
+        </div>
+        <div class="team-card">
+          <div class="avatar av1">EP</div>
+          <h3>Emmanuel Peya</h3>
+          <span class="role"> Gestionnaire GitHub</span>
+          <p>Responsable du repository GitHub, des tests d'intégration et de la qualité du code produit par l'équipe</p>
+        </div>
+        <div class="team-card">
+          <div class="avatar av1">AT</div>
+          <h3>Aissatou Thiam</h3>
+          <span class="role"> Développeuse </span>
+          <p>Intervient sur le front-end et le back-end, assure la liaison entre les composants </p>
+        </div>
+        <div class="team-card">
+          <div class="avatar av2">AS</div>
+          <h3>Aita Mbengue Sy</h3>
+          <span class="role">Développeuse back-end · Gestionnaire GitHub</span>
+          <p>Responsable du développement de l'API, de la base de données et de la gestion du repository collaboratif.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Nous retrouver</h2>
+      <div class="contact-inner">
+        <p>Pour toute question sur le projet, vous pouvez nous contacter via notre repository GitHub ou par email.</p>
+        <div class="contact-links">
+          <a href="#" class="btn-primary">Voir sur GitHub</a>
+          <a href="mailto:equipe@taskflow.sn" class="btn-secondary">Envoyer un email</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="logo">TaskFlow</span>
+      <span>Projet L2 Genie Logiciel — Groupe ISI Dakar, 2026</span>
+    </div>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>
